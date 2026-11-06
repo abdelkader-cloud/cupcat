@@ -1,0 +1,317 @@
+:root {
+    font-family: Tahoma, Arial, sans-serif;
+    color: #fff;
+    background: #100e15;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+#site-content[hidden],
+#login-screen[hidden] {
+    display: none;
+}
+
+.login-screen {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    padding: 24px 16px;
+    background:
+        radial-gradient(ellipse at 50% 30%, rgb(183 137 255 / 15%), transparent 48%),
+        #100e15;
+}
+
+.login-card {
+    width: min(100%, 420px);
+    padding: clamp(26px, 7vw, 42px);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 22px;
+    background: linear-gradient(145deg, #211d2b, #17151d);
+    box-shadow: 0 24px 70px rgb(0 0 0 / 35%);
+    text-align: center;
+}
+
+.login-mark {
+    display: grid;
+    width: 58px;
+    height: 58px;
+    place-items: center;
+    margin: 0 auto 17px;
+    border: 1px solid rgb(220 198 255 / 34%);
+    border-radius: 18px;
+    background: linear-gradient(145deg, #b995ef, #8055bd);
+    box-shadow: 0 8px 26px rgb(143 96 197 / 25%);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.login-team {
+    margin: 0 0 8px;
+    color: #cbb2ec;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.login-card h1 {
+    margin: 0 0 9px;
+    font-size: clamp(22px, 5vw, 27px);
+}
+
+.login-description {
+    margin: 0 0 24px;
+    color: #b7b2c0;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.login-form {
+    text-align: right;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.login-form input {
+    width: 100%;
+    min-height: 50px;
+    padding: 0 15px;
+    border: 1px solid rgb(255 255 255 / 15%);
+    border-radius: 10px;
+    outline: none;
+    background: #111016;
+    color: #fff;
+    font: inherit;
+    font-size: 18px;
+    letter-spacing: 0.3em;
+    text-align: center;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.login-form input:focus {
+    border-color: #b995ef;
+    box-shadow: 0 0 0 3px rgb(185 149 239 / 16%);
+}
+
+.login-form input[aria-invalid="true"] {
+    border-color: #ed8c9b;
+}
+
+.login-status {
+    min-height: 21px;
+    margin: 7px 0 8px;
+    color: #ff9eaa;
+    font-size: 12px;
+}
+
+.login-button {
+    width: 100%;
+    min-height: 48px;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(120deg, #b995ef, #8055bd);
+    color: #fff;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: filter 160ms ease, transform 160ms ease;
+}
+
+.login-button:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+}
+
+.login-button:focus-visible {
+    outline: 3px solid #e0ccff;
+    outline-offset: 3px;
+}
+
+.login-note {
+    margin: 22px 0 0;
+    color: #898493;
+    font-size: 11px;
+}
+
+.site-header {
+    position: relative;
+    overflow: hidden;
+    padding: 24px max(24px, calc((100% - 1080px) / 2));
+    border-bottom: 1px solid rgb(255 255 255 / 9%);
+    background:
+        radial-gradient(ellipse at 12% 0%, rgb(183 137 255 / 20%), transparent 42%),
+        linear-gradient(115deg, #21172d, #171321 58%, #171521);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 1080px;
+    margin-inline: auto;
+}
+
+.header-mark {
+    display: grid;
+    width: 52px;
+    height: 52px;
+    flex: 0 0 52px;
+    place-items: center;
+    border: 1px solid rgb(220 198 255 / 34%);
+    border-radius: 16px;
+    background: linear-gradient(145deg, #b995ef, #8055bd);
+    box-shadow: 0 8px 26px rgb(143 96 197 / 25%);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header-copy p,
+.header-copy h1 {
+    margin: 0;
+}
+
+.team-name {
+    margin-bottom: 4px !important;
+    color: #cbb2ec;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header-copy h1 {
+    color: #fff;
+    font-size: clamp(20px, 4vw, 29px);
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.training {
+    width: min(100% - 32px, 880px);
+    margin: 56px auto;
+}
+
+.player-card {
+    padding: clamp(18px, 4vw, 32px);
+    border: 1px solid rgb(255 255 255 / 9%);
+    border-radius: 20px;
+    background: linear-gradient(145deg, #211d2b, #17151d);
+    box-shadow: 0 24px 70px rgb(0 0 0 / 24%);
+}
+
+.player-heading {
+    margin-bottom: 20px;
+}
+
+.player-label {
+    margin: 0 0 6px;
+    color: #cbb2ec;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.player-heading h2 {
+    margin: 0 0 8px;
+    font-size: clamp(20px, 4vw, 27px);
+}
+
+.player-description {
+    margin: 0;
+    color: #b7b2c0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.player-card video {
+    display: block;
+    width: 100%;
+    max-height: 68vh;
+    border-radius: 12px;
+    background: #08070a;
+}
+
+.player-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.play-button {
+    min-height: 48px;
+    padding: 0 22px;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(120deg, #b995ef, #8055bd);
+    color: #fff;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: filter 160ms ease, transform 160ms ease;
+}
+
+.play-button:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+}
+
+.play-button:focus-visible {
+    outline: 3px solid #e0ccff;
+    outline-offset: 3px;
+}
+
+.play-status {
+    margin: 0;
+    color: #b7b2c0;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .site-header {
+        padding-block: 20px;
+    }
+
+    .header-content {
+        gap: 12px;
+    }
+
+    .header-mark {
+        width: 44px;
+        height: 44px;
+        flex-basis: 44px;
+        border-radius: 13px;
+        font-size: 21px;
+    }
+
+    .team-name {
+        font-size: 12px;
+    }
+
+    .header-copy h1 {
+        font-size: 19px;
+    }
+
+    .training {
+        margin-block: 32px;
+    }
+
+    .player-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .play-button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#171321">
+    <title>فريق المستشارة التجارية ملاك | تدريب مونتاج في كاب كات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="login-screen" id="login-screen">
+        <section class="login-card" aria-labelledby="login-title">
+            <span class="login-mark" aria-hidden="true">م</span>
+            <p class="login-team">فريق المستشارة التجارية ملاك</p>
+            <h1 id="login-title">مرحبًا بكِ في التدريب</h1>
+            <p class="login-description">أدخلي الرقم السري للمتابعة إلى تدريب المونتاج في كاب كات.</p>
+            <form class="login-form" id="login-form">
+                <label for="passcode">الرقم السري</label>
+                <input
+                    id="passcode"
+                    name="passcode"
+                    type="password"
+                    inputmode="numeric"
+                    autocomplete="off"
+                    maxlength="4"
+                    pattern="[0-9٠-٩]{4}"
+                    placeholder="● ● ● ●"
+                    aria-describedby="login-status"
+                    required
+                >
+                <p class="login-status" id="login-status" role="alert" aria-live="polite"></p>
+                <button class="login-button" type="submit">دخول إلى التدريب</button>
+            </form>
+            <p class="login-note">مساحتك للتعلّم والإبداع ✦</p>
+        </section>
+    </main>
+    <div id="site-content" hidden>
+        <header class="site-header">
+            <div class="header-content">
+                <span class="header-mark" aria-hidden="true">م</span>
+                <div class="header-copy">
+                    <p class="team-name">فريق المستشارة التجارية ملاك</p>
+                    <h1>تدريب مونتاج في كاب كات</h1>
+                </div>
+            </div>
+        </header>
+        <main class="training">
+            <section class="player-card" aria-labelledby="player-title">
+                <div class="player-heading">
+                    <p class="player-label">التدريب العملي</p>
+                    <h2 id="player-title">شاهدي الفيديو مع الشرح الصوتي</h2>
+                    <p class="player-description">يبدأ التسجيل الصوتي تلقائيًا مع الفيديو ليكون جزءًا من تجربة المشاهدة.</p>
+                </div>
+                <video id="training-video" controls preload="metadata" playsinline>
+                    <source src="cup%20cut.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+                <audio id="training-audio" preload="metadata">
+                    <source src="Voix%20261106_173302.m4a.mp4" type="audio/mp4">
+                    متصفحك لا يدعم تشغيل الصوت.
+                </audio>
+                <div class="player-actions">
+                    <button class="play-button" id="play-together" type="button">ابدئي الفيديو والصوت معًا</button>
+                    <p class="play-status" id="play-status" role="status" aria-live="polite">اضغطي الزر لبدء التدريب.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
